@@ -6,12 +6,6 @@ pipeline {
         WEBAPP_BRANCH = "master"
         PROJECT_PATH = "java/hello-world-sb"
     }
-    
-    tools {
-        // Ensure JDK is configured in Jenkins Global Tool Config
-        maven 'Maven 3.6.3'
-        jdk 'OpenJDK 11'
-    }
 
     stages {
         stage('Checkout WebApp Repo') {
