@@ -7,10 +7,6 @@ pipeline {
         PROJECT_PATH = "java/hello-world-sb"
     }
 
-    tools {
-        maven 'M3'
-    }
-
     stages {
         stage('Checkout WebApp Repo') {
             steps {
