@@ -26,7 +26,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 dir("webapp/${PROJECT_PATH}") {
-                    sh 'mvn clean package'
+                    sh './gradlew build'
                 }
                 
             }
@@ -36,7 +36,7 @@ pipeline {
             steps{
                 echo 'Testing...'
                 dir("webapp/${PROJECT_PATH}") {
-                    sh 'mvn test'
+                    sh './gradlew test'
                 }
                 
             }
