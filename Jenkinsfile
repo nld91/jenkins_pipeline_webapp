@@ -4,7 +4,6 @@ pipeline {
     environment {
         WEBAPP_REPO = "https://github.com/nld91/ci-cd-test-webapp-java-springboot.git"
         WEBAPP_BRANCH = "master"
-        PROJECT_PATH = "ci-cd-test-webapp-java-springboot"
     }
 
     stages {
