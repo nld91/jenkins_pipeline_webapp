@@ -43,3 +43,7 @@ The web application is hosted in a separate GitHub repository at the following U
 This repository should contain the Java Spring Boot application, including the `gradlew` wrapper for building and testing the application.
 
 You can modify the Jenkinsfile to suit your own web application by simply modifying the `WEBAPP_REPO` environment variable.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
