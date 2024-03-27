@@ -1,8 +1,8 @@
-# README for CI/CD Jenkins Pipeline Repo
+# CI/CD Jenkins Pipeline for Web Applications
 
 ## Overview
 
-This repository contains the infrastructure and pipeline configuration necessary to build, test, and deploy a Java Spring Boot web application. It utilizes Jenkins, a powerful automation server, to implement continuous integration and continuous deployment (CI/CD) practices for the web application which is housed in a separate repository. The repository includes a `Jenkinsfile` that defines the pipeline steps and a Docker Compose file (`compose.yml`) to easily set up and run a Jenkins container locally.
+This repository contains the infrastructure and pipeline configuration necessary to build, test, and deploy a Java Spring Boot web application. It utilises Jenkins, a powerful automation server, to implement continuous integration and continuous deployment (CI/CD) practices for the web application which is housed in a separate repository. The repository includes a `Jenkinsfile` that defines the pipeline steps and a Docker Compose file (`compose.yml`) to easily set up and run a Jenkins container locally.
 
 ## Repository Structure
 
