@@ -2,18 +2,16 @@ pipeline {
     agent any
 
     environment {
-        WEBAPP_REPO = "https://github.com/nld91/test-webapps.git"
+        WEBAPP_REPO = "https://github.com/nld91/ci-cd-test-webapp-java-springboot.git"
         WEBAPP_BRANCH = "master"
-        PROJECT_PATH = "java/hello-world-sb"
+        PROJECT_PATH = "ci-cd-test-webapp-java-springboot"
     }
 
     stages {
         stage('Checkout WebApp Repo') {
             steps {
                 script{
-                    dir('webapp') {
-                        git branch: "${WEBAPP_BRANCH}", url: "${WEBAPP_REPO}"
-                    }
+                    git branch: "${WEBAPP_BRANCH}", url: "${WEBAPP_REPO}"
                 }
             }
         }
@@ -21,20 +19,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                dir("webapp/${PROJECT_PATH}") {
-                    sh './gradlew build'
-                }
-                
+                    sh './gradlew build'                
             }
         }
 
         stage('Test') {
             steps{
                 echo 'Testing...'
-                dir("webapp/${PROJECT_PATH}") {
-                    sh './gradlew test'
-                }
-                
+                    sh './gradlew test'                
             }
         }
 
